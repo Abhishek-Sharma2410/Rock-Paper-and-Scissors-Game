@@ -1,0 +1,91 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #6674CC;
+    color: white;
+}
+.heading-logo img{
+    width: 70px;
+    margin-right: 20px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.stone, .paper, .scissors{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.stone img, .paper img, .scissors img{
+    width: 300px;
+    transition: .3s ease-in-out;
+}
+.stone img, .scissors img{
+    width: 200px;
+}
+.stone img:hover, .paper img:hover, .scissors img:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+}
+.stone h2, .paper h2, .scissors h2{
+    text-align: center;
+}
+@media screen and (max-width:801px) {
+    .container{
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width:457px) {
+    .text-heading h1{
+        font-size: 1.2rem;
+    }
+    .heading-logo img{
+        width: 50px;
+        margin-right: 20px;
+    }
+}
+
+.text{
+    width: max-content;
+    margin: auto;
+    background-color: #6674CC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 50px;
+    color: #fff;
+    border-radius: 30px;
+}
+.button{
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.button button{
+    background-color: #364BC5;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.button button:hover{
+    background-color: #3144ae;
+    transform: scale(0.9);
+}
